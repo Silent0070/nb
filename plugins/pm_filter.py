@@ -688,7 +688,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="❓How To Download❓", url='https://telegram.me/HEROFLiX/1201')
+            InlineKeyboardButton(text="❓How To Download❓", url='https://t.me/Cloud1i/18')
         ]
     )
 
