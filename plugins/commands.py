@@ -44,8 +44,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🚩 Group', url='https://telegram.me/+Ap6E_6ZzVaY3MTNl'),
-            InlineKeyboardButton('🤖 Updates', url='https://telegram.me/HeroFlix')
+            InlineKeyboardButton('🚩 Group', url='https://telegram.me/+-COdj-lObQZiYzhl'),
+            InlineKeyboardButton('🤖 Updates', url='https://telegram.me/MiniFlix')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('🕹 Repo', callback_data='about')
@@ -90,8 +90,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🚩 Group', url='https://telegram.me/+Ap6E_6ZzVaY3MTNl'),
-            InlineKeyboardButton('🤖 Updates', url='https://telegram.me/HeroFlix')
+            InlineKeyboardButton('🚩 Group', url='https://telegram.me/+-COdj-lObQZiYzhl'),
+            InlineKeyboardButton('🤖 Updates', url='https://telegram.me/MiniFlix')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('🕹 Repo', callback_data='about')
