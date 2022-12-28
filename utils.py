@@ -382,8 +382,8 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    url = f'URL_SHORTENR_WEBSITE'
-    params = {'api': 'URL_SHORTNER_WEBSITE_API',
+    url = f'https://flashlink.in/api'
+    params = {'api': 'd62884e59bc268f6aaf512182ccea552844c8aa6',
               'url': link,
               }
 
