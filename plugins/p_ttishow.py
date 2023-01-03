@@ -8,8 +8,6 @@ from utils import get_size, temp, get_settings
 from Script import script
 from pyrogram.errors import ChatAdminRequired
 
-"""-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
-
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
     r_j_check = [u.id for u in message.new_chat_members]
@@ -44,21 +42,7 @@ async def save_group(bot, message):
         await message.reply_text(
             text=f"<b>›› 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿. {message.chat.title} ❣️\n›› 𝙳𝙾𝙽'𝚃 𝙵𝙾𝚁𝙶𝙴𝚃 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽.\n›› 𝙸𝚂 𝙰𝙽𝚈 𝙳𝙾𝚄𝙱𝚃𝚂 𝙰𝙱𝙾𝚄𝚃 𝚄𝚂𝙸𝙽𝙶 𝙼𝙴 𝙲𝙻𝙸𝙲𝙺 𝙱𝙴𝙻𝙾𝚆 𝙱𝚄𝚃𝚃𝙾𝙽..⚡⚡.</b>",
             reply_markup=reply_markup)
-    else:
-        settings = await get_settings(message.chat.id)
-        if settings["welcome"]:
-            for u in message.new_chat_members:
-                if (temp.MELCOW).get('welcome') is not None:
-                    try:
-                        await (temp.MELCOW['welcome']).delete()
-                    except:
-                        pass
-                temp.MELCOW['welcome'] = await message.reply_video(
-                video="https://te.legra.ph/file/521122a3307670a2aa571.gif",                                               
-                                                 caption=f'<i>🧤</i><i><b>Helo, </b>{u.mention}</i><b><i>, Welcome To </i></b><a href="https://telegram.me/Heroflix"><b><i>HEROFLiX • GROUP</i></b></a> <i><b>亗</b> \n 📚You Can Request Any Movies, Series, Animation etc., here</i>',
-                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('❓How To Download❓', url='https://t.me/HEROFLiX/1201') ] ] )
-                )
-
+    
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
     if len(message.command) == 1:
