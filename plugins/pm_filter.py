@@ -165,7 +165,7 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
             k = await query.message.edit(
-        '<b>⚠ Error, No Results❗️\n\n📮 Please Follow Request Tips</b>',
+        '<b>⚠ Error, No Results❗️\n\n📮 Please Follow Request Tips</b>'),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -174,7 +174,7 @@ async def advantage_spoll_choker(bot, query):
                     )
                 ]
             ]
-        )
+        
    
             await asyncio.sleep(10)
             await k.delete()
