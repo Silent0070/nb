@@ -433,7 +433,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Add Me To Your Group ➕', callback_data='add')
         ], [
             InlineKeyboardButton('🚩 Group', url='https://telegram.me/+-COdj-lObQZiYzhl'),
             InlineKeyboardButton('🤖 Updates', url='https://telegram.me/MiniFlix')
@@ -471,6 +471,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "add":
+        buttons = [[
+            InlineKeyboardButton('Click Here & Add Me', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true'),
+         ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.ADD_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
