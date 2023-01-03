@@ -164,18 +164,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit(
-        '<b>⚠ Error, No Results❗️\n\n📮 Please Follow Request Tips</b>'),
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        text="Request Tips Click Here", url="https://graph.org/REQUEST-TIPS-11-12"
-                    )
-                ]
-            ]
-        
-   
+            k = await query.message.edit('<b><i>⚠ Error, No Results❗</i></b> \n\n<i><b>📮 Please Follow Request Tips </i></b> \n<b><i>🔆 Request Tips › [</i></b><a href="https://graph.org/REQUEST-TIPS-11-12"><b><i>Click Here</i></b></a><b><i>]</i></b>')
             await asyncio.sleep(10)
             await k.delete()
 
