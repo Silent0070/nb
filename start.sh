@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/TeenOfFire/Cineplix /Cineplix
+  git clone https://github.com/Jnanesh124/v7bot /v7bot 
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Cineplix
+  git clone $UPSTREAM_REPO /v7bot 
 fi
-cd /Cineplix
+cd /v7bot 
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 python3 bot.py
