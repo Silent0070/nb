@@ -739,7 +739,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>Your Search Results</b> ‛{search}’👇"
+        cap = f"📌 {message.from_user.mention} 𝗨𝗿 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗺𝗼𝘃𝗶𝗲 '{search}'" 
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -817,9 +817,9 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="××××× ⟨ Close ⟩ ×××××", callback_data=f'spolling#{user}#close_spellcheck')])
-    k = await msg.reply("<b>❗Enter Correct Name👇</b> \n<b>❗सही नाम दर्ज करें👇</b>",
+    k = await msg.reply("📌 𝐂𝐡𝐞𝐜𝐤 𝐮 𝐭𝐲𝐩𝐞𝐝 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 📌",
                      reply_markup=InlineKeyboardMarkup(btn))
-    await asyncio.sleep(60)
+    await asyncio.sleep(30)
     await k.delete()
 
 async def manual_filters(client, message, text=False):
