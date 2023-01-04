@@ -164,7 +164,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('⚠ Error, No Results❗checks pelling)
+            k = await query.message.edit(' ⚠ Error, No Results❗checks pelling ')
             await asyncio.sleep(10)
             await k.delete()
 
