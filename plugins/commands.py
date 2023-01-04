@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🎗️ Updates', url='https://telegram.me/HeroFlix')
+                InlineKeyboardButton('📌 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 ', url='https://telegram.me/ROCKERSBACKUP')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://telegram.me/{temp.U_NAME}?start=help"),
@@ -42,9 +42,9 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('📡 𝐌𝐗 𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'https://t.me/+tU8INwk_RbRlYWM1')
             ],[
-            InlineKeyboardButton('🚩 Group', url='https://telegram.me/+-COdj-lObQZiYzhl'),
+            InlineKeyboardButton('', url='https://telegram.me/+-COdj-lObQZiYzhl'),
             InlineKeyboardButton('🤖 Updates', url='https://telegram.me/MiniFlix')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
