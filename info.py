@@ -65,7 +65,7 @@ LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'https://dulink.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '3d818e7416f0d2ca600abc1c6216d088535393dd')
 
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 60))
 SELF_DELETE = environ.get('SELF_DELETE', True)
