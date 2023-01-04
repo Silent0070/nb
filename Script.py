@@ -11,19 +11,21 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    START_TXT = """<b>🧤Helo {}, I'm <a href=https://telegram.me/{}>{}</a> &amp; I Can Provide You Any Movies &amp; Series</b> 😇"""
-    HELP_TXT = """𝙷𝙴𝚈 {}
+    START_TXT = """<b>💎𝐇𝐞𝐲 {}, I'm <a href=https://telegram.me/{}>{}</a> 
+    
+📌𝐈 𝐚𝐦 𝐚𝐮𝐭𝐨𝐟𝐢𝐥𝐭𝐞𝐫 𝐚𝐧𝐝 𝐦𝐚𝐧𝐮𝐚𝐥𝐥 𝐟𝐢𝐥𝐭𝐞𝐫 𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐚𝐮𝐭𝐨 𝐝𝐞𝐥𝐞𝐭𝐞 𝐟𝐞𝐚𝐭𝐮𝐫𝐞 𝐛𝐨𝐭𝐡 𝐟𝐢𝐥𝐭𝐞𝐫𝐬 𝐭𝐨 𝐚𝐯𝐨𝐢𝐝 𝐯𝐢𝐨𝐥𝐞𝐧𝐜𝐞📌</b>"""
+    HELP_TXT = """💎𝐇𝐞𝐲 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """<i><b><u>AutoFilter + UrlShortner Bot</u></b>
 
-🔅 Want An </i><i><b>'AutoFilter + UrlShortner Bot'</b> Like Me For Your Group &amp; Earn Money Using It?
+💎 Want An </i><i><b>'AutoFilter + UrlShortner Bot'</b> Like Me For Your Group &amp; Earn Money Using It?
 
-📲 </i><i><b>Contact »</b> </i><i>@MrKrazyBot</i>"""    
+📲 </i><i><b>𝐌𝐲 𝐜𝐫𝐞𝐚𝐭𝐞𝐫 »</b> </i><i>@Beastonejnanesh</i>"""    
     SOURCE_TXT = """<i><b><u>AutoFilter + UrlShortner Bot</u></b>
 
 🔅 Want An </i><i><b>'AutoFilter + UrlShortner Bot'</b> Like Me For Your Group &amp; Earn Money Using It?
 
-📲 </i><i><b>Contact »</b> </i><i>@MrKrazyBot</i>"""    
+📲 </i><i><b>𝐌𝐲 𝐜𝐫𝐞𝐚𝐭𝐞𝐫 »</b> </i><i>@Beastonejnanesh</i>"""    
     MANUELFILTER_TXT = """Help: <b>FILTERS »</b>
 
 » <b>Filter is A Feature Where Users can Set Automated Reply to a Specific Word</b>
@@ -48,7 +50,7 @@ class script(object):
 3. <i>Buttons should be properly parsed as markdown format</i>
 
 <b>URL Buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/HeroFlixbot)</code>
+<code>[Button Text](buttonurl:https://t.me/thunderboltfilterbot)</code>
 
 <b>Alert Buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
