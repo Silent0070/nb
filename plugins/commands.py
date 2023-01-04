@@ -26,7 +26,7 @@ async def start(client, message):
                 InlineKeyboardButton('📌 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 ', url='https://telegram.me/ROCKERSBACKUP')
             ],
             [
-                InlineKeyboardButton('ℹ️ Help', url=f"https://telegram.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('ℹ️ Help', url=f"https://telegram.me/Beastonejnanesh"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -42,13 +42,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('📡 𝐌𝐗 𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'https://t.me/+tU8INwk_RbRlYWM1')
+            InlineKeyboardButton('📡 𝐌𝐗 𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'https://telegram.me/+tU8INwk_RbRlYWM1')
             ],[
-            InlineKeyboardButton('', url='https://telegram.me/+-COdj-lObQZiYzhl'),
-            InlineKeyboardButton('🤖 Updates', url='https://telegram.me/MiniFlix')
+            InlineKeyboardButton('💎 𝐆𝐑𝐎𝐔𝐏', url='https://telegram.me/+jTvy1mvA_cphZTZl'),
+            InlineKeyboardButton('📺 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url='https://telegram.me/ROCKERSBACKUP')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('🕹 Repo', callback_data='about')
+            InlineKeyboardButton('📌 𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 𝐌𝐎𝐕𝐈𝐄 📌', url=f'https://telegram.me/+InXKPyUl8R02YTBl')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -81,20 +80,19 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**🎗 You Have To Join Our Channel To Use Me 🎗 \n 🎗 मुझे इस्तेमाल करने के लिए हमारे चैनल से जुड़ना होगा 🎗**",
+            text="**💎 You Have To Join Our Channel To Use Me 💎**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('📡 𝐌𝐗 𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'https://telegram.me/+tU8INwk_RbRlYWM1')
             ],[
-            InlineKeyboardButton('🚩 Group', url='https://telegram.me/+-COdj-lObQZiYzhl'),
-            InlineKeyboardButton('🤖 Updates', url='https://telegram.me/MiniFlix')
+            InlineKeyboardButton('💎 𝐆𝐑𝐎𝐔𝐏', url='https://telegram.me/+jTvy1mvA_cphZTZl'),
+            InlineKeyboardButton('📺 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url='https:/telegram.me/ROCKERSBACKUP')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('🕹 Repo', callback_data='about')
+            InlineKeyboardButton('📌 𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 𝐌𝐎𝐕𝐈𝐄 📌', url='https://telegram.me/+InXKPyUl8R02YTBl')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -244,7 +242,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🔥彡[ @MiNiFLiX ]彡🔥', url='https://telegram.me/MINiFLIX') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('💎彡[ @ROCKERSBACKUP ]彡💎', url='https://telegram.me/ROCKERSBACKUP') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
