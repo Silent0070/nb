@@ -24,7 +24,7 @@ PICS = (environ.get('PICS', 'https://te.legra.ph/file/8dc3715008f6cf89930bc.jpg'
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5454779498').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001760281005').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5454779498').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5047601096').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = (environ.get('AUTH_CHANNEL', '-1001695164314')).split()
 auth_grp = environ.get('AUTH_GROUP')
@@ -64,13 +64,13 @@ LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies 
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', '')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'https://dulink.in')
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
 
-SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 0))
-SELF_DELETE = environ.get('SELF_DELETE', False)
+SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 60))
+SELF_DELETE = environ.get('SELF_DELETE', True)
 if SELF_DELETE == "False":
     SELF_DELETE = False
 
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/HEROFLiX/1201"
+DOWNLOAD_TEXT_URL = "https://t.me/+Rf7HPykmLC5hOWQ9"
