@@ -433,13 +433,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('📡 𝐌𝐗 𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'https://t.me/+tU8INwk_RbRlYWM1')
+            InlineKeyboardButton('📡 𝐌𝐗 𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'https://telegram.me/+tU8INwk_RbRlYWM1')
         ], [
-            InlineKeyboardButton('🚩 Group', url='https://telegram.me/+-COdj-lObQZiYzhl'),
-            InlineKeyboardButton('🤖 Updates', url='https://telegram.me/MiniFlix')
+            InlineKeyboardButton('💎 𝐆𝐑𝐎𝐔𝐏', url='https://telegram.me/+jTvy1mvA_cphZTZl'),
+            InlineKeyboardButton('📺 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url='https://telegram.me/ROCKERSBACKUP')
         ], [
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('🕹 Repo', callback_data='about')
+            InlineKeyboardButton('📌 𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 𝐌𝐎𝐕𝐈𝐄 📌', url='https://t.me/+InXKPyUl8R02YTBl')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -689,7 +688,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="❓How To Download❓", url='https://t.me/Cloud1i/18')
+            InlineKeyboardButton(text="📌 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📌", url='https://t.me/+Rf7HPykmLC5hOWQ9')
         ]
     )
 
@@ -698,12 +697,12 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"📚 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
+            [InlineKeyboardButton(text=f"📡 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="Next ⏩", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="📚 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="📡 1/1", callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -777,7 +776,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply('<b><i>⚠ Error, No Results❗</i></b> \n\n<b><i>📮 Please Follow Request Tips !!</i></b> \n<b><i>🔆 Request Tips › [</i></b><a href="https://graph.org/REQUEST-TIPS-11-12"><b><i>Click Here</i></b></a><b><i>]</i></b>')
+        k = await msg.reply(' ⚠ Error, No Results❗check spelling ')
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -806,7 +805,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply('<b><i>⚠ Error, No Results❗</i></b> \n\n<i><b>📮 Please Follow Request Tips </i></b> \n <b><i>🔆 Request Tips › [</i></b><a href="https://graph.org/REQUEST-TIPS-11-12"><b><i>Click Here</i></b></a><b><i>]</i></b>')
+        k = await msg.reply(' ⚠ Error, No Results❗check spelling ')
         await asyncio.sleep(8)
         await k.delete()
         return
