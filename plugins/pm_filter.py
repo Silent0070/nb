@@ -108,7 +108,7 @@ async def next_page(bot, query):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="📌 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📌", url='https://t.me/+Rf7HPykmLC5hOWQ9')
+            InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9')
         ]
     )
 
@@ -688,7 +688,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="📌 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📌", url='https://t.me/+Rf7HPykmLC5hOWQ9')
+            InlineKeyboardButton(text="💎 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 💎", url='https://t.me/+Rf7HPykmLC5hOWQ9')
         ]
     )
 
@@ -739,7 +739,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"📌 {message.from_user.mention} 𝗨𝗿 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗺𝗼𝘃𝗶𝗲 '{search}'" 
+        cap = f"💎 {message.from_user.mention} 𝗨𝗿 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗺𝗼𝘃𝗶𝗲 '{search}'" 
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -816,8 +816,8 @@ async def advantage_spell_chok(msg):
             callback_data=f"spolling#{user}#{k}",
         )
     ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="××××× ⟨ Close ⟩ ×××××", callback_data=f'spolling#{user}#close_spellcheck')])
-    k = await msg.reply("📌 𝐂𝐡𝐞𝐜𝐤 𝐮 𝐭𝐲𝐩𝐞𝐝 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 📌",
+    btn.append([InlineKeyboardButton(text="💎 Close 💎", callback_data=f'spolling#{user}#close_spellcheck')])
+    k = await msg.reply("💎 𝐂𝐡𝐞𝐜𝐤 𝐮 𝐭𝐲𝐩𝐞𝐝 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 💎",
                      reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(30)
     await k.delete()
