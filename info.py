@@ -12,18 +12,18 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '24113746'))
-API_HASH = environ.get('API_HASH', '333e9dc612b20b85a2da506ed3ff1a50')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5528278955:AAGDrQkxSXNjm7aVGsnuVkBhYuBESxyr2_s')
+API_ID = int(environ.get('API_ID', '24364418'))
+API_HASH = environ.get('API_HASH', '9e7cce3b9b74e9c0ec48d98be9ba7c6b')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5733663085:AAF9vj3Ro9PgZVDn58jwrrH0SHgCPHyz-Q8')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://te.legra.ph/file/8dc3715008f6cf89930bc.jpg')).split()
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/9be2c3561a8943e063faa.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5454779498').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001629324290').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5047601096').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001760281005').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5047601096').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -32,12 +32,12 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jnanesh:jnanesh@cluster0.8pzxa6s.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mangodb:mangodb@cluster0.dskkdky.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "jnanesh")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jnanesh_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001557802343'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001684512737'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1001695164314')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
