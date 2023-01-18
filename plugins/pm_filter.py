@@ -805,7 +805,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply(' ⚠ Error, No Results❗check spelling ')
+        k = await msg.reply('<b><i>⚠ Error, No Results❗</i></b> \n\n<i><b>📮 Please Follow Request Tips </i></b> \n <b><i>🔆 Request Tips › [</i></b><a href="https://graph.org/REQUEST-TIPS-11-12"><b><i>Click Here</i></b></a><b><i>]</i></b>')
         await asyncio.sleep(8)
         await k.delete()
         return
