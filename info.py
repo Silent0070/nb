@@ -32,12 +32,12 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mangodb:mangodb@cluster0.dskkdky.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jnanesh:jnanesh@cluster0.8pzxa6s.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "jnanesh")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jnanesh_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001684512737'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001557802343'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1001695164314')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
